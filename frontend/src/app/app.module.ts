@@ -4,12 +4,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/paritals/header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { SearchComponent } from './components/partials/search/search.component';
+import { FoodPageComponent } from './components/pages/food-page/food-page.component';
+import { TagsComponent } from './components/partials/tags/tags.component';
+import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
+import { TitleComponent } from './components/partials/title/title.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    SearchComponent,
+    FoodPageComponent,
+    TagsComponent,
+    CartPageComponent,
+    TitleComponent,
   ],
   imports: [
     BrowserModule,
