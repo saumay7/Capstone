@@ -15,7 +15,7 @@ export const sample_foods:  Food[] =
   },
   {
     id:'2',
-    name: 'Meatball',
+    name: 'Spaghetti',
     price: 20,
     cookTime: '20-30',
     favorite: true,

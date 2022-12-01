@@ -14,7 +14,7 @@ export const sample_foods:  any[] =
   },
   {
     id:'2',
-    name: 'Meatball',
+    name: 'Spaghetti',
     price: 20,
     cookTime: '20-30',
     favorite: true,
@@ -64,8 +64,7 @@ export const sample_foods:  any[] =
   },
 
 ]
-export const sample_tags: any[] =
-[
+export const sample_tags:any[] = [
   { name: 'All', count: 6 },
   { name: 'FastFood', count: 4 },
   { name: 'Pizza', count: 2 },
