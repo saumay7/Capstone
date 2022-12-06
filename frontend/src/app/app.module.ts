@@ -19,6 +19,8 @@ import { InputContainerComponent } from './components/partials/input-container/i
 import { InputValidationComponent } from './components/partials/input-validation/input-validation.component';
 import { TextInputComponent } from './components/partials/text-input/text-input.component';
 import { DefaultButtonComponent } from './components/partials/default-button/default-button.component';
+import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
+import { OrderItemsListComponent } from './components/partials/order-items-list/order-items-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +37,8 @@ import { DefaultButtonComponent } from './components/partials/default-button/def
     InputValidationComponent,
     TextInputComponent,
     DefaultButtonComponent,
+    CheckoutPageComponent,
+    OrderItemsListComponent,
 
   ],
   imports: [
