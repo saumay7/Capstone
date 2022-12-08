@@ -1,13 +1,12 @@
-
 <header>
-  <div class = "container">
-    <a routerLink="/" class = "logo">Saumay's Food Cart</a>
+  <div class="container">
+    <a routerLink="/" class="logo">Saumay's Capstone</a>
     <nav>
       <ul>
         <li *ngIf="!isAuth">
           <a routerLink="/login">Login</a>
         </li>
-        <li *ngIf="user.token" class = "menu-container">
+        <li *ngIf="isAuth" class="menu-container">
           <a routerLink="/dashboard">{{user.name}}</a>
           <div class="menu">
             <a routerLink="/profile">Profile</a>
@@ -18,7 +17,7 @@
         <li>
           <a routerLink="/cart-page">
             Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>
-        </a>
+          </a>
         </li>
       </ul>
     </nav>

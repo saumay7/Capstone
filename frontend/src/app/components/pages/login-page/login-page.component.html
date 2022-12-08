@@ -4,7 +4,7 @@
 
     <form [formGroup]="loginForm" (ngSubmit)="submit()">
 
-      <text-input
+    <text-input
     [control]="fc.email"
     [showErrorsWhen]="isSubmitted"
     type="email"
@@ -18,7 +18,13 @@
   label="Password">
 </text-input>
 
-<default-button text="Login"></default-button>
+    <default-button text="Login"></default-button>
+    <div class="register">
+      New user? &nbsp;
+      <a routerLink="/register" [queryParams]="{returnUrl : returnUrl}">
+        Register here
+      </a>
+    </div>
     </form>
   </div>
 </div>
