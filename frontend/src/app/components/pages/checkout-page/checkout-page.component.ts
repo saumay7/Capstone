@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { CartService } from 'src/app/services/cart.service';
 import { UserService } from 'src/app/services/user.service';
@@ -16,7 +17,8 @@ export class CheckoutPageComponent implements OnInit {
   constructor(cartService:CartService,
               private formBuilder: FormBuilder,
               private userService: UserService,
-              private toastrService: ToastrService) {
+              private toastrService: ToastrService,
+              private router: Router) {
                 const cart = cartService.getCart();
                 this.order.items = cart.items;
                 this.order.totalPrice = cart.totalPrice;
@@ -45,4 +47,5 @@ export class CheckoutPageComponent implements OnInit {
 
     console.log(this.order);
   }
+
 }
