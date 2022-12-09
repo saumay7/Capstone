@@ -26,6 +26,7 @@ app.post("/api/users/login", (req, res) => {
       && user.password === password);
   
      if(user) {
+      console.log("Hello")
       res.send(generateTokenReponse(user));
      }
      else{
@@ -41,7 +42,7 @@ app.post("/api/users/login", (req, res) => {
     },"SomeRandomText",{
       expiresIn:"30d"
     });
-  
+    
     user.token = token;
     return user;
   }

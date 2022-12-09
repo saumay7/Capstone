@@ -22,7 +22,7 @@ const routes: Routes = [
  // , canActivate:[AuthGuard]
 },
   {path:'payment', component: PaymentPageComponent
- // ,canActivate:[AuthGuard]
+ //a ,canActivate:[AuthGuard]
 },
 ];
 

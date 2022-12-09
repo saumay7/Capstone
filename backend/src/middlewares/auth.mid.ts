@@ -5,6 +5,7 @@ import { HTTP_UNAUTHORIZED } from "../constants/http_status";
 
 export default (req: any, res: any, next: any) => {
     const token = req.headers.access_token as string;
+    console.log("Token: " + token);
     if(!token) return res.status(HTTP_UNAUTHORIZED).send();
 
     try {
@@ -12,7 +13,10 @@ export default (req: any, res: any, next: any) => {
         req.user = decodedUser;
 
     } catch (error) {
+        
+        
         res.status(HTTP_UNAUTHORIZED).send();
+        
     }
 
     return next();
