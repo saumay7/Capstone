@@ -26,6 +26,7 @@ import { PaymentPageComponent } from './components/pages/payment-page/payment-pa
 import { LoadingComponent } from './components/partials/loading/loading.component';
 import { LoadingInterceptor } from './shared/interceptors/loading.interceptor';
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
+import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +64,8 @@ import { RegisterPageComponent } from './components/pages/register-page/register
     }),
   ],
   providers: [
-    {provide:HTTP_INTERCEPTORS, useClass:LoadingInterceptor, multi: true }
+    {provide:HTTP_INTERCEPTORS, useClass:LoadingInterceptor, multi: true },
+    {provide:HTTP_INTERCEPTORS, useClass:AuthInterceptor, multi: true }
 
   ],
   bootstrap: [AppComponent]
