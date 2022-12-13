@@ -53,7 +53,7 @@ a span{
 .menu{
   position:absolute;
   z-index:1;
-  background:whitesmoke;
+  background:purple;;
   display: none;
 }
 

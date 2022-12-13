@@ -27,6 +27,8 @@ import { LoadingComponent } from './components/partials/loading/loading.componen
 import { LoadingInterceptor } from './shared/interceptors/loading.interceptor';
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
+import { PaypalButtonComponent } from './components/partial/paypal-button/paypal-button.component';
+import { OrderTrackPageComponent } from './components/pages/order-track-page/order-track-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,6 +51,8 @@ import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
     PaymentPageComponent,
     LoadingComponent,
     RegisterPageComponent,
+    PaypalButtonComponent,
+    OrderTrackPageComponent,
 
   ],
   imports: [
